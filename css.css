@@ -1,6 +1,6 @@
 /* https://www.youtube.com/watch?v=gXkqy0b4M5g&ab_channel=developedbyed */
 
-nav {
+#nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,8 +12,8 @@ nav {
 .logo{
     color: rgb(250, 71, 71);
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
 }
 
 .nav_links{
@@ -24,7 +24,7 @@ nav {
 
 .nav_links a{
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 0.2rem;
     color: rgb(250, 71, 71);
     font-weight: bold;
     font-size: 1.1rem;
@@ -39,10 +39,10 @@ nav {
 } 
 
 .burger div{
-    width: 25px;
-    height: 3px;
+    width: 1.5rem;
+    height: 0.2rem;
     background-color: rgb(250, 71, 71);
-    margin: 5px;
+    margin: 0.3rem;
     transition: all 0.3s ease;
 
 }
@@ -69,6 +69,7 @@ nav {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+    
     .nav_links li{
         opacity: 0;
     }
@@ -108,4 +109,69 @@ nav {
 
 /* https://www.youtube.com/watch?v=gXkqy0b4M5g&ab_channel=developedbyed */
 
+
+/* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+
+#bg {
+    background-color: rgba(255, 83, 83, 0.822);
+    height: 500px;
+    width: 100%;
+    margin-top: auto;
+}
+#heading {
+    font-size: 1.5rem;
+    color:rgb(250, 71, 71);
+    margin-top: 50%;
+
+}
+
+.nav_links li:hover {
+    text-decoration: underline;
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 
