@@ -21,8 +21,10 @@
             <li><a href="#stats">Statistics</a></li>
             <li><a href="#contact">Reach Us</a></li>
         </ul>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
+
+        <!--https://getbootstrap.com/docs/4.0/components/buttons/-->
+        <button type="button" class="btn btn-dark" id="dark">Darkmode</button>
+        <!--https://getbootstrap.com/docs/4.0/components/buttons/-->
 
         <div class="burger">
             <div class="line1"></div>
@@ -31,47 +33,57 @@
         </div>
     </div>
     <!--https://www.youtube.com/watch?v=gXkqy0b4M5g&ab_channel=developedbyed-->
-
-<div id="bg">
-    
-    <h1>XX Art Gallery</h1>
-    <p>Fake Adress</p>
-    <p>Open from Tuesday-Saturday</p>
-    <p>09.00-16.00</p>
-</div>
-
-<div class="Exh">
-    <h2>Check out Our Exhibitions!</h2>
-    <p>We currently have 3 exhibitions. Use these buttons to view them!</p>
-    <button type="button" class="btn btn-primary">Exhibition 1</button>
-    <button type="button" class="btn btn-primary">Exhibition 2</button>
-    <button type="button" class="btn btn-primary">Exhibition 3</button>
-
-    
-</div>
-
-<!-- https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp -->
-<div class="row">
-    <div class="column">
-      <img src="images/baam.jpg">
-      <img src="images/baam.jpg">
-      <img src="images/baam.jpg">
-      <img src="images/baam.jpg">
-      <img src="images/baam.jpg">
-      <img src="images/baam.jpg">
+    <div id="bg">
+    <h1 id="heading", class="intro">XX Art Gallery</h1>
+    <p id="par">Fake Adress Rd. Fake Adress Building No. X </p>
+    <p id="par">Open from Tuesday-Saturday</p>
+    <p id="par">09.00-16.00</p>
     </div>
-    <div class="column">
-        <img src="images/baam.jpg">
-        <img src="images/baam.jpg">
-        <img src="images/baam.jpg">
-        <img src="images/baam.jpg">
-        <img src="images/baam.jpg">
-        <img src="images/baam.jpg">
+
+    <div id="bg2">
+        <img src="images/Abstract_image_102.jpg" class="img">
+
+
     </div>
-  </div>
-  <!-- https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp -->
+
+    <div class="exh">
+        <h2 id= "par2" class="h">Check out Our Exhibitions!</h2>
+        <p id="par2">We currently have 3 exhibitions. Use these buttons to view previews of them!</p>
+        <!--https://getbootstrap.com/docs/4.0/components/buttons/-->
+        <button type="button" class="btn btn-primary">Exhibition 1</button>
+        <button type="button" class="btn btn-primary">Exhibition 2</button>
+        <button type="button" class="btn btn-primary">Exhibition 3</button>
+        <button id="but1"></a>Heyo</button>
+        <button id="but2">Heyo2</button>
+        <!--https://getbootstrap.com/docs/4.0/components/buttons/-->
+    </div>
+
+  <!-- https://www.kaggle.com/datasets/bryanb/abstract-art-gallery -->
+          <!-- https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp -->
+          <a id="gallery"></a>
+          <div class="row">
+          <div class="column" id="column1">
+            <img src="images\Abstract_image_42.jpg">
+            <img src="images\Abstract_image_77.jpg">
+            <img src="images\Abstract_image_80.jpg">
+            <img src="images\Abstract_image_84.jpg">
+            <img src="images\Abstract_image_85.jpg">
+            <img src="images\Abstract_image_100.jpg">
+          </div>
+          <div class="column" id="column2">
+            <img src="images\Abstract_image_162.jpg">
+            <img src="images\Abstract_image_163.jpg">
+            <img src="images\Abstract_image_169.jpg">
+            <img src="images\Abstract_image_183.jpg">
+            <img src="images\Abstract_image_224.jpg">
+            <img src="images\Abstract_image_93.jpg">
+          </div>
+          <!-- https://www.kaggle.com/datasets/bryanb/abstract-art-gallery -->
+          <!-- https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp -->
+      </div>
 
     <script src="script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
