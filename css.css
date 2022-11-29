@@ -119,23 +119,124 @@
   }
 /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 
+@media screen and (max-width: 600px) {
+    #dark{
+        width: 100px;
+        height: 30px;
+    }
+   
+}
+
 #bg {
-    background-color: rgba(255, 83, 83, 0.822);
+    background-color: rgba(211, 71, 71, 0.747);
+    float: left;
     height: 500px;
-    width: 100%;
-    margin-top: auto;
+    width: 50%;
+    text-align: center;
+    overflow: auto;
 }
+
+#bg2 {
+    width: 50%;
+    height: 500px;
+    float: right;
+    overflow: auto;
+}
+
+
+
 #heading {
-    font-size: 1.5rem;
-    color:rgb(250, 71, 71);
-    margin-top: 50%;
-
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+    margin-top: 2%; 
+    
 }
 
+#par {
+    font-size: 2.5rem;
+    color:white;
+    margin-top: 2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/*https://www.w3schools.com/css/css3_buttons.asp*/
+
+#dark {
+  position: relative;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+#dark:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      #dark:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+/*https://www.w3schools.com/css/css3_buttons.asp*/
+
+@media screen and (max-width: 800px) {
+    #par{
+        font-size: 2rem;
+    }
+
+    #heading {
+        font-size: 3rem;
+    }}
+
+@media screen and (max-width: 550px) {
+     #par{
+        font-size: 1.5rem;
+     }
+    
+    #heading {
+         font-size: 2.5rem;
+    }
+}
 .nav_links li:hover {
     text-decoration: underline;
 }
 
+.exh {
+    background-color: white;
+    height: 500px;
+    width: 100%;   
+    overflow: auto;
+}
+
+#par2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.h{
+    font-weight: bold;
+    margin-top: 1%;
+}
 
 /* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 .row {
@@ -175,3 +276,16 @@
 
 /* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
 
+/*https://www.geeksforgeeks.org/how-to-align-two-divs-horizontally-using-html/#:~:text=1.,which%20has%20the%20class%20main.*/
+
+#column1 {
+    display: none;    
+}
+
+#column2 {
+    display: none;
+}
+
+#column3 {
+    display: none;
+}
