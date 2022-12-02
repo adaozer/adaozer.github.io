@@ -130,11 +130,11 @@
 #bg {
     background-color: rgba(211, 71, 71, 0.747);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 #bg2 {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -258,6 +258,14 @@
     width: 100%;
     height: auto;
     
+}
+
+.text {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-top: 1%;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
