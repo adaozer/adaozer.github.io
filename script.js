@@ -33,83 +33,47 @@ navSlide();
 
 // Video
 
-function showDiv () {
-  const column1 = document.getElementById('column1');
-  const column2 = document.getElementById('column2');
-  const column3 = document.getElementById('column3');
-    if (column1.style.display === 'none') {
-    column1.style.display = 'flex';
-    column2.style.display = 'none';
-    column3.style.display = 'none';
-  } else {
-    column1.style.display = 'none';
-  }
- }
+const column1 = document.getElementById('column1');
+const column2 = document.getElementById('column2');
+const column3 = document.getElementById('column3');
 
 const but1 = document.getElementById('but1');
-
-but1.addEventListener('click', showDiv);
-
-function showDiv2 () {
-  const column1 = document.getElementById('column1');
-  const column2 = document.getElementById('column2');
-  const column3 = document.getElementById('column3');
-  if (column2.style.display === 'none') {
-  column1.style.display = 'none';
-  column2.style.display = 'block';
-  column3.style.display = 'none';
-} else {
-  column2.style.display = 'none';
-}
-}
-
 const but2 = document.getElementById('but2');
-
-but2.addEventListener('click', showDiv2);
-
-function showDiv3 () {
-  const column1 = document.getElementById('column1');
-  const column2 = document.getElementById('column2');
-  const column3 = document.getElementById('column3');
-
-  if (column3.style.display === 'none') {
-  column1.style.display = 'none';
-  column2.style.display = 'none';
-  column3.style.display = 'block';
-} else {
-  column3.style.display = 'none';
-}
-}
-
 const but3 = document.getElementById('but3');
 
-but3.addEventListener('click', showDiv3);
+const tp = document.getElementById('gallery');
 
 but1.addEventListener('click', function () {
-  const column1 = document.getElementById('column1');
-  const column2 = document.getElementById('column2');
-  const column3 = document.getElementById('column3');
-  const tp = document.getElementById('gallery');
+  column1.classList.remove('hidden');
+  column2.classList.add('hidden');
+  column3.classList.add('hidden');
+});
+
+but2.addEventListener('click', function () {
+  column2.classList.remove('hidden');
+  column1.classList.add('hidden');
+  column3.classList.add('hidden');
+});
+
+but3.addEventListener('click', function () {
+  column3.classList.remove('hidden');
+  column1.classList.add('hidden');
+  column2.classList.add('hidden');
+});
+
+but1.addEventListener('click', function () {
   if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
     window.scrollTo(0, tp.offsetTop - 55);
   };
 });
 
 but2.addEventListener('click', function () {
-  const column1 = document.getElementById('column1');
-  const column2 = document.getElementById('column2');
-  const column3 = document.getElementById('column3');
-  const tp = document.getElementById('gallery');
   if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
     window.scrollTo(0, tp.offsetTop - 55);
   };
 });
 
 but3.addEventListener('click', function () {
-  const column1 = document.getElementById('column1');
-  const column2 = document.getElementById('column2');
-  const column3 = document.getElementById('column3');
-  const tp = document.getElementById('gallery');
   if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
   window.scrollTo(0, tp.offsetTop - 55);
   };
