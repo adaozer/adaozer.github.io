@@ -38,7 +38,7 @@ function showDiv () {
   const column2 = document.getElementById('column2');
   const column3 = document.getElementById('column3');
     if (column1.style.display === 'none') {
-    column1.style.display = 'block';
+    column1.style.display = 'flex';
     column2.style.display = 'none';
     column3.style.display = 'none';
   } else {
