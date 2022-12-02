@@ -112,11 +112,7 @@
 
 /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 
-.nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+
 /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
 
 @media screen and (max-width: 600px) {
@@ -127,20 +123,26 @@
    
 }
 
+#big {
+    display: flex;
+}
+
 #bg {
     background-color: rgba(211, 71, 71, 0.747);
-    float: left;
-    height: 500px;
-    width: 50%;
     text-align: center;
-    overflow: auto;
+    margin-top: 50px;
 }
 
 #bg2 {
-    width: 50%;
-    height: 500px;
-    float: right;
-    overflow: auto;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #big {
+        display: block;
+    }
+
 }
 
 
@@ -197,14 +199,19 @@
       }
 /*https://www.w3schools.com/css/css3_buttons.asp*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     #par{
         font-size: 2rem;
     }
 
     #heading {
         font-size: 3rem;
-    }}
+    }
+
+    #bg2 {
+        margin-top: 0;
+    }    
+}
 
 @media screen and (max-width: 550px) {
      #par{
@@ -226,6 +233,13 @@
     overflow: auto;
     text-align: center;
     height: 350px;
+    margin-top: 1%;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #par2 {
@@ -238,6 +252,12 @@
 .h{
     font-weight: bold;
     margin-top: 1%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */

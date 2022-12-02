@@ -84,3 +84,24 @@ function showDiv3 () {
 const but3 = document.getElementById('but3');
 
 but3.addEventListener('click', showDiv3);
+
+but1.addEventListener('click', function () {
+  const tp = document.getElementById('gallery')
+  if(column1.style.display==='block' || column2.style.display==='block' || column3.style.display==='block'){
+    window.scrollTo(0, tp.offsetTop-55)
+  } 
+})
+
+but2.addEventListener('click', function () {
+  const tp = document.getElementById('gallery')
+  if(column1.style.display==='block' || column2.style.display==='block' || column3.style.display==='block'){
+    window.scrollTo(0, tp.offsetTop-55)
+  }
+})
+
+but3.addEventListener('click', function () {
+  const tp = document.getElementById('gallery')
+  if(column1.style.display==='block' || column2.style.display==='block' || column3.style.display==='block'){
+  window.scrollTo(0, tp.offsetTop-55)
+  }
+})
