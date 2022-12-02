@@ -86,22 +86,31 @@ const but3 = document.getElementById('but3');
 but3.addEventListener('click', showDiv3);
 
 but1.addEventListener('click', function () {
-  const tp = document.getElementById('gallery')
-  if(column1.style.display==='block' || column2.style.display==='block' || column3.style.display==='block'){
-    window.scrollTo(0, tp.offsetTop-55)
-  } 
-})
+  const column1 = document.getElementById('column1');
+  const column2 = document.getElementById('column2');
+  const column3 = document.getElementById('column3');
+  const tp = document.getElementById('gallery');
+  if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
+    window.scrollTo(0, tp.offsetTop - 55);
+  };
+});
 
 but2.addEventListener('click', function () {
-  const tp = document.getElementById('gallery')
-  if(column1.style.display==='block' || column2.style.display==='block' || column3.style.display==='block'){
-    window.scrollTo(0, tp.offsetTop-55)
-  }
-})
+  const column1 = document.getElementById('column1');
+  const column2 = document.getElementById('column2');
+  const column3 = document.getElementById('column3');
+  const tp = document.getElementById('gallery');
+  if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
+    window.scrollTo(0, tp.offsetTop - 55);
+  };
+});
 
 but3.addEventListener('click', function () {
-  const tp = document.getElementById('gallery')
-  if(column1.style.display==='block' || column2.style.display==='block' || column3.style.display==='block'){
-  window.scrollTo(0, tp.offsetTop-55)
-  }
-})
+  const column1 = document.getElementById('column1');
+  const column2 = document.getElementById('column2');
+  const column3 = document.getElementById('column3');
+  const tp = document.getElementById('gallery');
+  if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
+  window.scrollTo(0, tp.offsetTop - 55);
+  };
+});
