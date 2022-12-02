@@ -54,15 +54,23 @@ but1.addEventListener('click', function () {
 });
 
 but2.addEventListener('click', function () {
-  column2.classList.remove('hidden');
-  column1.classList.add('hidden');
-  column3.classList.add('hidden');
+  if (column2.classList.contains('hidden')) {
+    column2.classList.remove('hidden');
+    column1.classList.add('hidden');
+    column3.classList.add('hidden');
+  } else {
+    column2.classList.add('hidden');
+  };
 });
 
 but3.addEventListener('click', function () {
-  column3.classList.remove('hidden');
-  column1.classList.add('hidden');
-  column2.classList.add('hidden');
+  if (column3.classList.contains('hidden')) {
+    column3.classList.remove('hidden');
+    column1.classList.add('hidden');
+    column2.classList.add('hidden');
+  } else {
+    column3.classList.add('hidden');
+  };
 });
 
 but1.addEventListener('click', function () {

@@ -187,12 +187,12 @@
 
 .exh {
     background-color: white;
-    height: 500px;
     width: 100%;   
     overflow: auto;
     text-align: center;
     height: 275px;
     margin-top: 1%;
+    margin-bottom: 1.5%;
 }
 
 #nav {
@@ -390,19 +390,29 @@
     margin-bottom: 100px;
 }
 
+@media screen and (max-width:530px){
+.exh {
+    height: 350px;
+}
+}
 
+@media screen and (max-width:460px){
+    .exh {
+        height: 400px;
+    }
+}
+
+ @media screen and (max-width:460px){
+        .exh {
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width:300px){
+        .exh {
+            height: 700px;
+        }
+    }
 /*
-images\Abstract_image_1448.jpg
-images\Abstract_image_1445.jpg
-images\Abstract_image_1421.jpg
-images\Abstract_image_1422.jpg
-images\Abstract_image_1423.jpg
-images\Abstract_image_1424.jpg
-
-images\Abstract_image_1336.jpg
-images\Abstract_image_1337.jpg
-images\Abstract_image_1344.jpg
-images\Abstract_image_1345.jpg
-images\Abstract_image_1350.jpg
-images\Abstract_image_1351.jpg
+https://webcode.tools/generators/css/keyframe-animation
 */
