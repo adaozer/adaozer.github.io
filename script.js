@@ -44,9 +44,13 @@ const but3 = document.getElementById('but3');
 const tp = document.getElementById('gallery');
 
 but1.addEventListener('click', function () {
-  column1.classList.remove('hidden');
-  column2.classList.add('hidden');
-  column3.classList.add('hidden');
+  if (column1.classList.contains('hidden')) {
+    column1.classList.remove('hidden');
+    column2.classList.add('hidden');
+    column3.classList.add('hidden');
+  } else {
+    column1.classList.add('hidden');
+  };
 });
 
 but2.addEventListener('click', function () {
@@ -62,19 +66,19 @@ but3.addEventListener('click', function () {
 });
 
 but1.addEventListener('click', function () {
-  if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
+  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
     window.scrollTo(0, tp.offsetTop - 55);
   };
 });
 
 but2.addEventListener('click', function () {
-  if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
+  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
     window.scrollTo(0, tp.offsetTop - 55);
   };
 });
 
 but3.addEventListener('click', function () {
-  if (column1.style.display === 'block' || column2.style.display === 'block' || column3.style.display === 'block') {
-  window.scrollTo(0, tp.offsetTop - 55);
+  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
+    window.scrollTo(0, tp.offsetTop - 55);
   };
 });
