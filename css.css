@@ -249,13 +249,13 @@
 }
 
 #gallery {
-    scroll-margin-top: 55px;
+    scroll-margin-top: 8vh;
 }
 #stats {
-    scroll-margin-top: 55px;
+    scroll-margin-top: 8vh;
 }
 #contact {
-    scroll-margin-top: 55px;
+    scroll-margin-top: 8vh;
 }
 
 
@@ -386,10 +386,6 @@
     display: none;
 }
 
-#column1{
-    margin-bottom: 100px;
-}
-
 @media screen and (max-width:530px){
 .exh {
     height: 350px;
@@ -406,6 +402,10 @@
         .exh {
             height: 500px;
         }
+
+        #but3 {
+            margin-top: 1.2%;
+        }
     }
 
     @media screen and (max-width:300px){
@@ -416,3 +416,14 @@
 /*
 https://webcode.tools/generators/css/keyframe-animation
 */
+
+.marginsh4 {
+    margin-top: 5%;
+}
+
+#h5 {
+text-align: center;
+font-size: 2rem;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+}

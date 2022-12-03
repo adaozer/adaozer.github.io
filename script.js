@@ -43,13 +43,21 @@ const but3 = document.getElementById('but3');
 
 const tp = document.getElementById('gallery');
 
+const h5 = document.getElementById('h5');
+
 but1.addEventListener('click', function () {
   if (column1.classList.contains('hidden')) {
     column1.classList.remove('hidden');
     column2.classList.add('hidden');
     column3.classList.add('hidden');
+    h5.classList.add('marginsh4');
   } else {
     column1.classList.add('hidden');
+    h5.classList.remove('marginsh4');
+  };
+
+  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
+    window.scrollTo(0, tp.offsetTop - 55);
   };
 });
 
@@ -58,8 +66,14 @@ but2.addEventListener('click', function () {
     column2.classList.remove('hidden');
     column1.classList.add('hidden');
     column3.classList.add('hidden');
+    h5.classList.add('marginsh4');
   } else {
     column2.classList.add('hidden');
+    h5.classList.remove('marginsh4');
+  };
+
+  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
+    window.scrollTo(0, tp.offsetTop - 55);
   };
 });
 
@@ -68,24 +82,12 @@ but3.addEventListener('click', function () {
     column3.classList.remove('hidden');
     column1.classList.add('hidden');
     column2.classList.add('hidden');
+    h5.classList.add('marginsh4');
   } else {
     column3.classList.add('hidden');
+    h5.classList.remove('marginsh4');
   };
-});
 
-but1.addEventListener('click', function () {
-  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
-    window.scrollTo(0, tp.offsetTop - 55);
-  };
-});
-
-but2.addEventListener('click', function () {
-  if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
-    window.scrollTo(0, tp.offsetTop - 55);
-  };
-});
-
-but3.addEventListener('click', function () {
   if (column1.classList.contains('hidden') === false || column2.classList.contains('hidden') === false || column3.classList.contains('hidden') === false) {
     window.scrollTo(0, tp.offsetTop - 55);
   };
