@@ -14,4 +14,4 @@ module.exports = {
     semi: [2, 'always'],
     indent: 'off'
   }
-}
+};
