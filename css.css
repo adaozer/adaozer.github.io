@@ -119,6 +119,7 @@
 
 #big {
     display: flex;
+    
 }
 
 #bg {
@@ -435,3 +436,5 @@ rect {
   .svg {
     text-align: center;
   }
+
+

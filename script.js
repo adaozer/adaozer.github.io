@@ -94,12 +94,13 @@ but3.addEventListener('click', function () {
 });
 
 // https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=bundle.js
+// https://www.statista.com/study/58458/online-art-market/
 
 (function (d3) {
   'use strict';
 
-  const titleText = 'Top 10 Most Populous Countries';
-  const xAxisLabelText = 'Population';
+  const titleText = 'Global art market volume of transactions from 2007 to 2021 (in millions)';
+  const xAxisLabelText = 'Years';
 
   const svg = d3.select('svg');
 
@@ -107,8 +108,8 @@ but3.addEventListener('click', function () {
   const height = +svg.attr('height');
 
   const render = data => {
-    const xValue = d => d.population;
-    const yValue = d => d.country;
+    const xValue = d => d.value;
+    const yValue = d => d.year;
     const margin = { top: 50, right: 40, bottom: 77, left: 180 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
@@ -171,3 +172,4 @@ but3.addEventListener('click', function () {
 }(d3));
 
 // https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=bundle.js
+// https://www.statista.com/study/58458/online-art-market/
