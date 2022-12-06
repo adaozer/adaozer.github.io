@@ -12,14 +12,14 @@ References:
 
 - Jocelyn, V. and Biagi, L. (2022) Global online art market, Statista. Available at: https://www.statista.com/study/58458/online-art-market/ (Accessed: December 6, 2022). 
 
-- Kelleher, C. (2018) Making a bar chart with D3.js and SVG [reloaded], YouTube. YouTube. Available at: https://www.youtube.com/watch?v=NlBt-7PuaLk&amp;ab_channel=CurranKelleher (Accessed: December 6, 2022). 
-
-- Making a bar chart (2018) VizHub. Available at: https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b (Accessed: December 6, 2022). 
-
 - Mark Otto, J.T. (2022) Forms, · Bootstrap v5.2. Available at: https://getbootstrap.com/docs/5.2/forms/overview/ (Accessed: December 6, 2022). 
 
 - Responsive navigation bar tutorial | HTML CSS JAVASCRIPT (2018) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=gXkqy0b4M5g (Accessed: December 6, 2022). 
 
+- Sortable Bar Chart (2015) Popular Blocks. Available at: https://bl.ocks.org/mbostock/3885705 (Accessed: December 6, 2022). 
+
 - Wilsmex (2018) Wilsmex/edu: Demo files &amp; resources for various edu projects, GitHub. Available at: https://github.com/wilsmex/edu (Accessed: December 6, 2022). 
+
+- Window∷ domcontentloaded event - web apis: MDN (2022) Window: DOMContentLoaded event - Web APIs | MDN. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event (Accessed: December 6, 2022). 
 
 
