@@ -1,3 +1,5 @@
+/** */
+
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
@@ -96,8 +98,6 @@ const margin = { top: 20, right: 20, bottom: 30, left: 40 };
     const width = 960 - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 
-const formatPercent = d3.format('.0%');
-
 const x = d3.scale.ordinal()
     .rangeRoundBands([0, width], 0.1, 1);
 
@@ -111,7 +111,6 @@ const xAxis = d3.svg.axis()
 const yAxis = d3.svg.axis()
     .scale(y)
     .orient('left')
-    .tickFormat(formatPercent);
 
 const svg = d3.select('svg')
     .attr('width', width + margin.left + margin.right)
@@ -125,7 +124,7 @@ d3.csv('data.csv', function (data) {
   });
 
   x.domain(data.map(function (d) { return d.year; }));
-  y.domain([0, d3.max(data, function (d) { return d.value; })]);
+  y.domain([30, d3.max(data, function (d) { return d.value; })]);
 
   svg.append('g')
       .attr('class', 'x axis')
