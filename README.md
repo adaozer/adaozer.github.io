@@ -10,6 +10,8 @@ References:
 
 - How to align two DIV's horizontally using HTML (2021) GeeksforGeeks. Available at: https://www.geeksforgeeks.org/how-to-align-two-divs-horizontally-using-html/#:~:text=1.,which%20has%20the%20class%20main. (Accessed: December 6, 2022). 
 
+- Jocelyn, V. and Biagi, L. (2022) Global online art market, Statista. Available at: https://www.statista.com/study/58458/online-art-market/ (Accessed: December 6, 2022). 
+
 - Kelleher, C. (2018) Making a bar chart with D3.js and SVG [reloaded], YouTube. YouTube. Available at: https://www.youtube.com/watch?v=NlBt-7PuaLk&amp;ab_channel=CurranKelleher (Accessed: December 6, 2022). 
 
 - Making a bar chart (2018) VizHub. Available at: https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b (Accessed: December 6, 2022). 
