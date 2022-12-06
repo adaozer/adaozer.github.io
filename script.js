@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
 
-// https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+// Window∷ domcontentloaded event - web apis: MDN (2022) Window: DOMContentLoaded event - Web APIs | MDN. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event (Accessed: December 6, 2022). 
 
 // Responsive navigation bar tutorial | HTML CSS JAVASCRIPT (2018) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=gXkqy0b4M5g (Accessed: December 6, 2022).
 
@@ -89,84 +89,8 @@ but3.addEventListener('click', function () {
 });
 
 // Bostock, M. (2011) Data-driven documents, D3.js. Available at: https://d3js.org/ (Accessed: December 6, 2022).
-// Kelleher, C. (2018) Making a bar chart with D3.js and SVG [reloaded], YouTube. YouTube. Available at: https://www.youtube.com/watch?v=NlBt-7PuaLk&amp;ab_channel=CurranKelleher (Accessed: December 6, 2022).
-// Making a bar chart (2018) VizHub. Available at: https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b (Accessed: December 6, 2022).
 // Jocelyn, V. and Biagi, L. (2022) Global online art market, Statista. Available at: https://www.statista.com/study/58458/online-art-market/ (Accessed: December 6, 2022).
-
-/* (function (d3) {
-  'use strict';
-
-  const titleText = 'The Values of Our Paintings';
-  const xAxisLabelText = 'Prices';
-
-  const svg = d3.select('svg');
-
-  const width = +svg.attr('width');
-  const height = +svg.attr('height');
-
-  const render = data => {
-    const xValue = d => d.population;
-    const yValue = d => d.country;
-    const margin = { top: 50, right: 40, bottom: 77, left: 180 };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-
-    const xScale = d3.scaleLinear()
-      .domain([0, d3.max(data, xValue)])
-      .range([0, innerWidth]);
-
-    const yScale = d3.scaleBand()
-      .domain(data.map(yValue))
-      .range([0, innerHeight])
-      .padding(0.1);
-
-    const g = svg.append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`);
-
-    const xAxisTickFormat = number =>
-      d3.format('.3s')(number)
-        .replace('G', 'B');
-
-    const xAxis = d3.axisBottom(xScale)
-      .tickFormat(xAxisTickFormat)
-      .tickSize(-innerHeight);
-
-    g.append('g')
-      .call(d3.axisLeft(yScale))
-      .selectAll('.domain, .tick line')
-      .remove();
-
-    const xAxisG = g.append('g').call(xAxis)
-      .attr('transform', `translate(0,${innerHeight})`);
-
-    xAxisG.select('.domain').remove();
-
-    xAxisG.append('text')
-      .attr('class', 'axis-label')
-      .attr('y', 65)
-      .attr('x', innerWidth / 2)
-      .attr('fill', 'black')
-      .text(xAxisLabelText);
-
-    g.selectAll('rect').data(data)
-      .enter().append('rect')
-      .attr('y', d => yScale(yValue(d)))
-      .attr('width', d => xScale(xValue(d)))
-      .attr('height', yScale.bandwidth());
-
-    g.append('text')
-      .attr('class', 'title')
-      .attr('y', -10)
-      .text(titleText);
-  };
-
-  d3.csv('data.csv').then(data => {
-    data.forEach(d => {
-      d.population = +d.population * 1000000;
-    });
-    render(data);
-  });
-}(d3)); */
+// Sortable Bar Chart (2015) Popular Blocks. Available at: https://bl.ocks.org/mbostock/3885705 (Accessed: December 6, 2022)
 
 const margin = { top: 20, right: 20, bottom: 30, left: 40 };
     const width = 960 - margin.left - margin.right;
