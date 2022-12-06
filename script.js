@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 });
 
-// Window∷ domcontentloaded event - web apis: MDN (2022) Window: DOMContentLoaded event - Web APIs | MDN. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event (Accessed: December 6, 2022). 
+// Window∷ domcontentloaded event - web apis: MDN (2022) Window: DOMContentLoaded event - Web APIs | MDN. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event (Accessed: December 6, 2022).
 
 // Responsive navigation bar tutorial | HTML CSS JAVASCRIPT (2018) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=gXkqy0b4M5g (Accessed: December 6, 2022).
 
@@ -119,7 +119,7 @@ const svg = d3.select('svg')
   .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-d3.csv('data.csv', function (error, data) {
+d3.csv('data.csv', function (data) {
   data.forEach(function (d) {
     d.value = +d.value;
   });
@@ -184,7 +184,9 @@ d3.csv('data.csv', function (error, data) {
 });
 
 const formB = document.getElementById('butForm');
+const inp = document.getElementById('exampleInputEmail1');
 
-formB.addEventListener('click', function () {
+formB.addEventListener('click', () => {
+  inp.value = '';
   alert("Thank you!\nWe'll be in touch!");
 });
