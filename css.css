@@ -512,7 +512,7 @@ font-weight: bold;
 .bus {
     border-radius: 12px;
     background: white;
-    border-color: white;
+    border-color: black;
     transition-duration: 0.4s;
     border-width: 3px;
     width: 80px;
@@ -548,4 +548,9 @@ font-weight: bold;
     .bus {
         margin-top: 3%;
     }
+}
+
+.p-art {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

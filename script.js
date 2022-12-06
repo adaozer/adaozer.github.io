@@ -113,7 +113,7 @@ const yAxis = d3.svg.axis()
     .orient('left')
     .tickFormat(formatPercent);
 
-const svg = d3.select('body').append('svg')
+const svg = d3.select('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
   .append('g')
@@ -121,11 +121,11 @@ const svg = d3.select('body').append('svg')
 
 d3.tsv('data.tsv', function (error, data) {
   data.forEach(function (d) {
-    d.frequency = +d.frequency;
+    d.value = +d.value;
   });
 
-  x.domain(data.map(function (d) { return d.letter; }));
-  y.domain([0, d3.max(data, function (d) { return d.frequency; })]);
+  x.domain(data.map(function (d) { return d.year; }));
+  y.domain([0, d3.max(data, function (d) { return d.value; })]);
 
   svg.append('g')
       .attr('class', 'x axis')
@@ -140,16 +140,16 @@ d3.tsv('data.tsv', function (error, data) {
       .attr('y', 6)
       .attr('dy', '.71em')
       .style('text-anchor', 'end')
-      .text('Frequency');
+      .text('Market value in billion U.S. dollars');
 
   svg.selectAll('.bar')
       .data(data)
     .enter().append('rect')
       .attr('class', 'bar')
-      .attr('x', function (d) { return x(d.letter); })
+      .attr('x', function (d) { return x(d.year); })
       .attr('width', x.rangeBand())
-      .attr('y', function (d) { return y(d.frequency); })
-      .attr('height', function (d) { return height - y(d.frequency); });
+      .attr('y', function (d) { return y(d.value); })
+      .attr('height', function (d) { return height - y(d.value); });
 
   d3.select('input').on('change', change);
 
@@ -160,22 +160,21 @@ d3.tsv('data.tsv', function (error, data) {
   function change () {
     clearTimeout(sortTimeout);
 
-    // Copy-on-write since tweens are evaluated after a delay.
     const x0 = x.domain(data.sort(this.checked
-        ? function (a, b) { return b.frequency - a.frequency; }
-        : function (a, b) { return d3.ascending(a.letter, b.letter); })
-        .map(function (d) { return d.letter; }))
+        ? function (a, b) { return b.value - a.value; }
+        : function (a, b) { return d3.ascending(a.year, b.year); })
+        .map(function (d) { return d.year; }))
         .copy();
 
     svg.selectAll('.bar')
-        .sort(function (a, b) { return x0(a.letter) - x0(b.letter); });
+        .sort(function (a, b) { return x0(a.year) - x0(b.year); });
 
     const transition = svg.transition().duration(750);
         const delay = function (d, i) { return i * 50; };
 
     transition.selectAll('.bar')
         .delay(delay)
-        .attr('x', function (d) { return x0(d.letter); });
+        .attr('x', function (d) { return x0(d.year); });
 
     transition.select('.x.axis')
         .call(xAxis)
