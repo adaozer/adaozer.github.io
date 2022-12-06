@@ -432,6 +432,7 @@ font-weight: bold;
 
   #svg {
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .text2 {
@@ -443,7 +444,7 @@ font-weight: bold;
   .form {
     background-color: rgba(211, 71, 71, 0.747);
     width: 100%;
-    height: 225px;
+    height: 250px;
     display: flex;
     
 }
@@ -486,7 +487,7 @@ font-weight: bold;
 #h6 {
     font-size: 1.65rem;
 }
-.ps1 {
+.ps {
     font-size: 1.15rem;
 }
 }
@@ -495,7 +496,7 @@ font-weight: bold;
     #h6 {
         font-size: 1.5rem;
     }
-    .ps1 {
+    .ps {
         font-size: 1rem;
     }
     }
@@ -523,4 +524,19 @@ font-weight: bold;
 .bus:hover {
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width:700px){
+    .ps1 {
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width:450px){
+    .ps1 {
+        font-size: 1rem;
+    }
+    .bus {
+        margin-top: 3%;
+    }
 }
