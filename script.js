@@ -172,3 +172,10 @@ but3.addEventListener('click', function () {
 
 // https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=bundle.js
 // https://www.statista.com/study/58458/online-art-market/
+
+const formB = document.getElementById('butForm');
+
+formB.addEventListener('click', function () {
+  alert("Thank you!\nWe'll be in touch!");
+  console.log('click');
+});
