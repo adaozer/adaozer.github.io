@@ -110,7 +110,7 @@ const xAxis = d3.svg.axis()
 
 const yAxis = d3.svg.axis()
     .scale(y)
-    .orient('left')
+    .orient('left');
 
 const svg = d3.select('svg')
     .attr('width', width + margin.left + margin.right)
