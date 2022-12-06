@@ -184,7 +184,6 @@
     text-align: center;
     height: 275px;
     margin-top: 1%;
-    margin-bottom: 1.5%;
 }
 
 #nav {
@@ -407,7 +406,7 @@ CSS Grid responsive image gallery tutorial (2020) YouTube. YouTube. Available at
     }
 
 .marginsh4 {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 #h5 {
@@ -419,7 +418,7 @@ font-weight: bold;
   
   #svg {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3%;
   }
 
 /* Sortable Bar Chart (2015) Popular Blocks. Available at: https://bl.ocks.org/mbostock/3885705 (Accessed: December 6, 2022)*/
@@ -512,7 +511,7 @@ font-weight: bold;
 .bus {
     border-radius: 12px;
     background: white;
-    border-color: black;
+    border-color: white;
     transition-duration: 0.4s;
     border-width: 3px;
     width: 80px;
@@ -555,64 +554,6 @@ font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
-
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
-  
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+#check {
+    margin-right: 0.5%;
+}
