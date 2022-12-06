@@ -119,7 +119,7 @@ const svg = d3.select('svg')
   .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-d3.tsv('data.tsv', function (error, data) {
+d3.csv('data.csv', function (error, data) {
   data.forEach(function (d) {
     d.value = +d.value;
   });
