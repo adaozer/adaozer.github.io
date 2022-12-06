@@ -95,12 +95,11 @@ but3.addEventListener('click', function () {
 
 // https://vizhub.com/curran/326730c80fc54969ae501fb58c8cb94b?edit=files&file=bundle.js
 // https://www.statista.com/study/58458/online-art-market/
-
 (function (d3) {
   'use strict';
 
-  const titleText = 'Global art market volume of transactions from 2007 to 2021 (in millions)';
-  const xAxisLabelText = 'Years';
+  const titleText = 'Top 10 Most Populous Countries';
+  const xAxisLabelText = 'Population';
 
   const svg = d3.select('svg');
 
@@ -108,8 +107,8 @@ but3.addEventListener('click', function () {
   const height = +svg.attr('height');
 
   const render = data => {
-    const xValue = d => d.value;
-    const yValue = d => d.year;
+    const xValue = d => d.population;
+    const yValue = d => d.country;
     const margin = { top: 50, right: 40, bottom: 77, left: 180 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
@@ -137,7 +136,7 @@ but3.addEventListener('click', function () {
     g.append('g')
       .call(d3.axisLeft(yScale))
       .selectAll('.domain, .tick line')
-        .remove();
+      .remove();
 
     const xAxisG = g.append('g').call(xAxis)
       .attr('transform', `translate(0,${innerHeight})`);
@@ -145,22 +144,22 @@ but3.addEventListener('click', function () {
     xAxisG.select('.domain').remove();
 
     xAxisG.append('text')
-        .attr('class', 'axis-label')
-        .attr('y', 65)
-        .attr('x', innerWidth / 2)
-        .attr('fill', 'black')
-        .text(xAxisLabelText);
+      .attr('class', 'axis-label')
+      .attr('y', 65)
+      .attr('x', innerWidth / 2)
+      .attr('fill', 'black')
+      .text(xAxisLabelText);
 
     g.selectAll('rect').data(data)
       .enter().append('rect')
-        .attr('y', d => yScale(yValue(d)))
-        .attr('width', d => xScale(xValue(d)))
-        .attr('height', yScale.bandwidth());
+      .attr('y', d => yScale(yValue(d)))
+      .attr('width', d => xScale(xValue(d)))
+      .attr('height', yScale.bandwidth());
 
     g.append('text')
-        .attr('class', 'title')
-        .attr('y', -10)
-        .text(titleText);
+      .attr('class', 'title')
+      .attr('y', -10)
+      .text(titleText);
   };
 
   d3.csv('data.csv').then(data => {
