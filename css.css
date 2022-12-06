@@ -1,4 +1,4 @@
-/* https://www.youtube.com/watch?v=gXkqy0b4M5g&ab_channel=developedbyed */
+/* Responsive navigation bar tutorial | HTML CSS JAVASCRIPT (2018) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=gXkqy0b4M5g (Accessed: December 6, 2022). */
 
 #nav {
     display: flex;
@@ -107,15 +107,6 @@
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px,-6px);
 }
-
-/* https://www.youtube.com/watch?v=gXkqy0b4M5g&ab_channel=developedbyed */
-
-
-/* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
-
-
-/* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
-
 
 #big {
     display: flex;
@@ -228,7 +219,7 @@
     margin-top: 1%;
 }
 
-/*https://www.geeksforgeeks.org/how-to-align-two-divs-horizontally-using-html/#:~:text=1.,which%20has%20the%20class%20main.*/
+/*How to align two DIV's horizontally using HTML (2021) GeeksforGeeks. Available at: https://www.geeksforgeeks.org/how-to-align-two-divs-horizontally-using-html/#:~:text=1.,which%20has%20the%20class%20main. (Accessed: December 6, 2022).*/
 
 
 .butt {
@@ -260,7 +251,9 @@
 }
 
 
-/* https://github.com/wilsmex/edu/tree/master/CSS%20Grid%20Web%20Gallery, https://www.youtube.com/watch?v=gvPyJ0rc944&ab_channel=FollowAndrew */
+/* Wilsmex (2018) Wilsmex/edu: Demo files & resources for various edu projects, GitHub. Available at: https://github.com/wilsmex/edu (Accessed: December 6, 2022).
+CSS Grid responsive image gallery tutorial (2020) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=gvPyJ0rc944&amp;ab_channel=FollowAndrew (Accessed: December 6, 2022).
+*/
 
 .container{
     display:grid;
@@ -380,8 +373,6 @@
     }
 }
 
-/* https://github.com/wilsmex/edu/tree/master/CSS%20Grid%20Web%20Gallery, https://www.youtube.com/watch?v=gvPyJ0rc944&ab_channel=FollowAndrew */
-
 
 .hidden {
     display: none;
@@ -426,13 +417,35 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-weight: bold;
 }
   
-  rect {
-    fill: steelblue;
-  }
-
   #svg {
     text-align: center;
     margin-bottom: 50px;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .bar {
+    fill: steelblue;
+    fill-opacity: .9;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  
+  label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 
   .text2 {
@@ -504,7 +517,7 @@ font-weight: bold;
 .bus {
     border-radius: 12px;
     background: white;
-    border-color: black;
+    border-color: white;
     transition-duration: 0.4s;
     border-width: 3px;
     width: 80px;
@@ -524,6 +537,7 @@ font-weight: bold;
 .bus:hover {
     background-color: black;
     color: white;
+    border-color: black;
 }
 
 @media screen and (max-width:700px){
